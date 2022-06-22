@@ -2,10 +2,7 @@ import React, { useState } from "react";
 import "./useState.css";
 
 function UseState() {
-  const [count, setCount] = useState(() => {
-    console.log("run function");
-    return 0;
-  });
+  const [count, setCount] = useState(0);
 
   function decrement() {
     setCount((prevCount) => prevCount - 1);
@@ -19,8 +16,8 @@ function UseState() {
   return (
     <div className="app">
       <div className="left">
-        <button onClick={decrement}>Decrement by 2</button>
         <button onClick={() => setCount(count - 1)}>Decrement by 1</button>
+        <button onClick={decrement}>Decrement by 2</button>
       </div>
       <h1>{count}</h1>
       <div className="right">
@@ -28,8 +25,7 @@ function UseState() {
         <button onClick={increment}>Increment by 2</button>
       </div>
       <p>Count set to: {count}</p>
-
-      <footer>
+      <div className="app_intro">
         <span>
           The useState() is a Hook that allows you to have state variables in
           functional components . so basically useState is the ability to
@@ -42,7 +38,14 @@ function UseState() {
           entries. UseState encapsulate only singular value from the state, for
           multiple state need to have useState calls.
         </span>
-      </footer>
+      </div>
+
+      <div className="implementation">
+        <div className="implementation_header">
+          Now look through the code for more understanding:
+        </div>
+        <img src="../useState.jpg" alt="" className="code" />
+      </div>
     </div>
   );
 }

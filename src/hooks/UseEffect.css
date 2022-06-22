@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Allison&display=swap");
+
+.useEffect {
+  margin-top: 40px;
+}
+.useEffect > button {
+  height: 4rem;
+  width: 10rem;
+  margin: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  background-color: rgb(76, 75, 75);
+}
+.useEffect > button:hover {
+  border-bottom: 2px solid white;
+}
+
+.useEffect > h1 {
+  letter-spacing: 2px;
+}
+
+.useEffect > .textarea {
+  margin-left: 168px;
+  border-radius: 30px;
+  height: 50vh;
+  width: 60vw;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  letter-spacing: 4px;
+  padding: 2px;
+}
+
+.effect {
+  font-family: "Allison";
+  font-size: 40px;
+}
+.implementation_header {
+  margin-left: 70px;
+}
+.code {
+  margin-left: 70px;
+}

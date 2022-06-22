@@ -1,16 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: rgb(95, 95, 235);
+  /* background-color: rgb(95, 95, 235); */
+  background-color: rgb(24, 24, 24);
   color: white;
+  font-family: "Roboto";
 }
 .app {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   text-align: center;
   align-items: center;
-  padding: 8px;
   overflow-y: hidden;
   overflow-x: hidden;
+}
+.header {
+  background-color: rgb(24, 24, 24);
+  width: 75vw;
+  height: 5rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  animation: filter 6s infinite;
+  /* filter: drop-shadow(10px 10px 10px rgb(17, 17, 232)); */
+}
+.header > img {
+  margin-left: 8px;
+  object-fit: contain;
+  height: 3rem;
+  width: 3rem;
+}
+@keyframes header {
+  0% {
+    border-top: 1px solid rgb(3, 96, 58);
+    border-left: 1px solid rgb(203, 3, 3);
+    border-right: 1px solid rgb(4, 56, 4);
+    border-bottom: 1px solid rgb(10, 10, 89);
+  }
+  25% {
+    border-bottom: 1px solid rgb(3, 96, 58);
+    border-right: 1px solid rgb(203, 3, 3);
+    border-left: 1px solid rgb(4, 56, 4);
+    border-top: 1px solid rgb(10, 10, 89);
+  }
+  50% {
+    border-right: 1px solid rgb(3, 96, 58);
+    border-bottom: 1px solid rgb(203, 3, 3);
+    border-top: 1px solid rgb(4, 56, 4);
+    border-left: 1px solid rgb(10, 10, 89);
+  }
+  75% {
+    border-top: 1px solid rgb(113, 226, 179);
+    border-left: 1px solid rgb(133, 191, 45);
+    border-right: 1px solid rgb(231, 141, 32);
+    border-bottom: 1px solid rgb(241, 27, 102);
+  }
+  100% {
+    border-left: 1px solid rgb(3, 96, 58);
+    border-right: 1px solid rgb(203, 3, 3);
+    border-bottom: 1px solid rgb(4, 56, 4);
+    border-top: 1px solid rgb(10, 10, 89);
+  }
+}
+
+@keyframes filter {
+  0% {
+    filter: drop-shadow(10px 10px 10px rgb(232, 17, 96));
+  }
+  25% {
+    filter: drop-shadow(10px 10px 10px rgb(14, 21, 222));
+  }
+  50% {
+    filter: drop-shadow(10px 10px 10px rgb(219, 243, 40));
+  }
+  75% {
+    filter: drop-shadow(10px 10px 10px rgb(8, 162, 77));
+  }
+  100% {
+    filter: drop-shadow(10px 10px 10px rgb(232, 74, 17));
+  }
 }
