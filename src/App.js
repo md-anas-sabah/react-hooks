@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import styled from "styled-components";
 import UseState from "./hooks/UseState";
 import UseEffect from "./hooks/UseEffect";
+import UseMemo from "./hooks/UseMemo";
 
 function App() {
   return (
@@ -19,8 +20,8 @@ function App() {
           <Link to="/effect">
             <button>useEffect Hook</button>
           </Link>
-          <Link to="/state">
-            <button>useState Hook</button>
+          <Link to="/memo">
+            <button>useMemo Hook</button>
           </Link>
           <Link to="/state">
             <button>useState Hook</button>
@@ -38,6 +39,7 @@ function App() {
         <Routes>
           <Route path="/state" element={<UseState />} />
           <Route path="/effect" element={<UseEffect />} />
+          <Route path="/memo" element={<UseMemo />} />
         </Routes>
       </Router>
       {/* <Last>@2022 Copyright:Md Anas Sabah</Last> */}
