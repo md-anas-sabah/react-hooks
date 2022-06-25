@@ -85,3 +85,17 @@
     filter: drop-shadow(10px 10px 10px rgb(232, 74, 17));
   }
 }
+
+/* UseContextApp */
+
+.useContext > button {
+  margin: 20px 0 20px 0;
+  height: 5rem;
+  width: 15rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  background-color: rebeccapurple;
+  font-size: 20px;
+  letter-spacing: 1px;
+}

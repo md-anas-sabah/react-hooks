@@ -4,6 +4,7 @@ import styled from "styled-components";
 import UseState from "./hooks/UseState";
 import UseEffect from "./hooks/UseEffect";
 import UseMemo from "./hooks/UseMemo";
+import UseContextApp from "./components/UseContextApp";
 
 function App() {
   return (
@@ -23,8 +24,8 @@ function App() {
           <Link to="/memo">
             <button>useMemo Hook</button>
           </Link>
-          <Link to="/state">
-            <button>useState Hook</button>
+          <Link to="/context">
+            <button>useContext Hook</button>
           </Link>
           <Link to="/state">
             <button>useState Hook</button>
@@ -40,6 +41,7 @@ function App() {
           <Route path="/state" element={<UseState />} />
           <Route path="/effect" element={<UseEffect />} />
           <Route path="/memo" element={<UseMemo />} />
+          <Route path="/context" element={<UseContextApp />} />
         </Routes>
       </Router>
       {/* <Last>@2022 Copyright:Md Anas Sabah</Last> */}

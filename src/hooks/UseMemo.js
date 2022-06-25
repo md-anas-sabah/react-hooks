@@ -31,12 +31,12 @@ function UseMemo() {
 
       <div className="intro">
         <h4>
-          The useMemo is a hook used in the functional component of react that
-          returns a memoized value. In Computer Science, memoization is a
-          concept used in general when we don’t need to recompute the function
-          with a given argument for the next time as it returns the cached
-          result. A memoized function remembers the results of output for a
-          given set of inputs. For example, if there is a function to add two
+          The <l>useMemo</l> is a hook used in the functional component of
+          react that returns a memoized value. In Computer Science, memoization
+          is a concept used in general when we don’t need to recompute the
+          function with a given argument for the next time as it returns the
+          cached result. A memoized function remembers the results of output for
+          a given set of inputs. For example, if there is a function to add two
           numbers, and we give the parameter as 1 and 2 for the first time the
           function will add these two numbers and return 3, but if the same
           inputs come again then we will return the cached value i.e 3 and not
