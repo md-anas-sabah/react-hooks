@@ -5,7 +5,8 @@
   margin: 0;
   box-sizing: border-box;
   /* background-color: rgb(95, 95, 235); */
-  background-color: rgb(24, 24, 24);
+  /* background-color: rgb(24, 24, 24); */
+  background: linear-gradient( );
   color: white;
   font-family: "Roboto";
 }
@@ -49,7 +50,7 @@
     border-top: 1px solid rgb(10, 10, 89);
   }
   50% {
-    border-right: 1px solid rgb(3, 96, 58);
+    border-right: 1px solid rgb(3, 96, 50);
     border-bottom: 1px solid rgb(203, 3, 3);
     border-top: 1px solid rgb(4, 56, 4);
     border-left: 1px solid rgb(10, 10, 89);
